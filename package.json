@@ -1,0 +1,21 @@
+{
+  "name": "mean-gallery",
+  "version": "1.0.0",
+  "description": "gallery app using mean stack and aws",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bharadwaz Kari",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.232.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "mongo-db": "^1.0.2",
+    "mongoose": "^5.0.17",
+    "nodemon": "^1.17.3"
+  }
+}
