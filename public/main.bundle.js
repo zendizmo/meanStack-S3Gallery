@@ -10862,7 +10862,7 @@ var ServerSettingsService = /** @class */ (function () {
     function ServerSettingsService() {
     }
     ServerSettingsService.prototype.getApiURL = function () {
-        return CONFIG.apiTestUrl;
+        return CONFIG.apiHerokuUrl;
     };
     ServerSettingsService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Injectable */])(),
