@@ -33,6 +33,10 @@ router.use('/images', images);
 
 router.get('/', (req, res) => {
     res.json({msg:'hello invalid'})
+});
+
+router.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
 })
 
 router.listen(port, () => {
