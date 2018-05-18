@@ -4,7 +4,7 @@ const Properties = require('../schemas/properties');
 const Images = require('../schemas/images');
 var AWS = require('aws-sdk');
 AWS.config.loadFromPath('./config/s3_config.json');
-var s3Bucket = new AWS.S3( { params: {Bucket: 'gallery-app-kari'} } )
+var s3Bucket = new AWS.S3( { params: {Bucket: '<<S3_BUCKET_NAME>>'} } )
 
 router.get('/',  (req, res, next) => {   
     Images.getImages((err, images)=>{
@@ -37,7 +37,7 @@ router.post('/upload',  (req, res, next) => {
                     console.log(err);                  
                 } else {
                     const imgUrl = 
-                    'https://s3.amazonaws.com/gallery-app-kari/'+maxImageId+'.jpg';
+                    'https://s3.amazonaws.com/<<S3_BUCKET_NAME>>/'+maxImageId+'.jpg';
                     const image = new Images({
                         imageId: maxImageId,
                         imageName: req.body.imageName,

@@ -1,5 +1,5 @@
 {
-    "accessKeyId":"AKIAJ7U2C4YASWHSELVQ",
-    "secretAccessKey":"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",
+    "accessKeyId":"<<IAM_ACCESS_ID>>",
+    "secretAccessKey":"<<IAM_SECRET_KEY>>",
     "region":"us-east-1"
 }
